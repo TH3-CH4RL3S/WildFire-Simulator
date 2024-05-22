@@ -142,7 +142,7 @@ public class App {
         JPanel caliPanel = new JPanel(new BorderLayout());
         JLabel caliDescLabel = new JLabel("California");
         caliDescLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
-        caliButton = new JButton(new ImageIcon("WildfireSim/images/california.jpg"));
+        caliButton = new JButton(new ImageIcon("images/california.jpg"));
         caliButton.setPreferredSize(new Dimension(200, 200));
 
 
@@ -158,7 +158,7 @@ public class App {
         JPanel lapplandPanel = new JPanel(new BorderLayout());
         JLabel lapplandDescLabel = new JLabel("Lappland");
         lapplandDescLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
-        lapplandButton = new JButton(new ImageIcon("WildfireSim/images/lappland.jpg"));
+        lapplandButton = new JButton(new ImageIcon("images/lappland.jpg"));
         lapplandButton.setPreferredSize(new Dimension(200, 200));
         lapplandButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -171,7 +171,7 @@ public class App {
         JPanel austPanel = new JPanel(new BorderLayout());
         JLabel austDescLabel = new JLabel("Australia");
         austDescLabel.setFont(new Font("Verdana", Font.PLAIN, 15));
-        austButton = new JButton(new ImageIcon("WildfireSim/images/Australia.jpg"));
+        austButton = new JButton(new ImageIcon("images/Australia.jpg"));
         austButton.setPreferredSize(new Dimension(200, 200));
         austButton.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -309,13 +309,13 @@ public class App {
             // Lappland, Cali or Australia
             switch (map) {
                 case 1:
-                    map_source = "WildfireSim/images/cali_map.png"; //Cali
+                    map_source = "images/cali_map.png"; //Cali
                     break;
                 case 2:
-                    map_source = "WildfireSim/images/swe_map.png"; //Lappland
+                    map_source = "images/swe_map.png"; //Lappland
                     break;
                 case 3:
-                    map_source = "WildfireSim/images/aus_map.png"; //Australia
+                    map_source = "images/aus_map.png"; //Australia
                     break;                              
             }
         }
@@ -332,7 +332,7 @@ public class App {
             //System.out.println("Egen bild vald..");
             String inputFile = getImagePath();
             System.out.println("Image Path: " + imagePath);
-            map_source = "WildfireSim/test_egen_vald_map.png";
+            map_source = "test_egen_vald_map.png";
             ImageResizer.Converter(gridSize, inputFile , map_source);
         }
         
