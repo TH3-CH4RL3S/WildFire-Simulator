@@ -20,7 +20,7 @@ public class App {
     static int chosenMap = -1;
     static String imagePath;
     static String filePath;
-    private static String selectedFolderPath = "C:/Users/charl/Desktop/System-ochprogramvaruutveckling/test2/WildfireSim/images";
+    private static String selectedFolderPath = "/images";
 
     static String windDirection = "null";
     static double windSpeed = -1.0;
